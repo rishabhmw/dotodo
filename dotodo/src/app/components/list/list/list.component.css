@@ -1,3 +1,27 @@
 * {
     font-family: monospace;
 }
+.keyword {
+    font-style: italic;
+    font-weight: bold;
+}
+.red {
+    color: firebrick;
+}
+.green {
+    color: forestgreen;
+}
+.centered {
+    display: flex;
+    align-items:stretch;
+    justify-content: center;
+}
+.list {
+    margin: 10px;
+    width: 500px;
+}
+.items {
+    margin: 5px;
+    border-radius: 5px;
+    border-style: hidden;
+}
