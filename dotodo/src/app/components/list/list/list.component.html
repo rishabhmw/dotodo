@@ -1,0 +1,16 @@
+<p>Pending Tasks</p>
+<div class="pendingItems" *ngFor="let todo of todos | keyvalue" (click)="markDone(todo.key)">
+    do {{todo.value.task}} by {{todo.value.dueby}}
+</div>
+
+<form (ngSubmit)="addToDo($event)">
+    <input name="task" placeholder="do">
+    <input name="dueby" placeholder="by">
+    <input type="submit" value="add">
+</form>
+
+<p>Done Tasks</p>
+
+<div class="doneItems" *ngFor="let doneItem of doneItems | keyvalue">
+    did {{doneItem.value.task}} on {{doneItem.value.dueby}}
+</div>
